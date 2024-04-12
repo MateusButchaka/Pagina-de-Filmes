@@ -1,13 +1,16 @@
-
+# Pagina de Filmes
 Desenvolvi uma página de filmes usando React. Este projeto foi construído para explorar e demonstrar minha habilidade em consumir APIs externas. Para isso, utilizei a API do The Movie Database (TMDB), que fornece uma vasta quantidade de informações sobre filmes, que eu queria apresentar de forma elegante e acessível.
 
-Estrutura do Projeto e Navegação
+# Estrutura do Projeto e Navegação
 Comecei configurando o ambiente de navegação do projeto usando o BrowserRouter do react-router-dom, que permite a criação de uma aplicação de página única (SPA). Defini três rotas principais:
 
-/ (Home): Aqui, os usuários podem ver uma lista dos filmes mais bem avaliados. Para isso, faço uma chamada à API para buscar esses filmes.
-/movie/:id (Movie): Nesta rota, mostro detalhes específicos de um filme selecionado, como o orçamento, a receita, a duração e uma descrição geral.
-/search (Search): Permite que os usuários façam buscas por filmes usando palavras-chave.
-Componentes e Funcionalidades
+# /(Home): Aqui, os usuários podem ver uma lista dos filmes mais bem avaliados. Para isso, faço uma chamada à API para buscar esses filmes.
+
+# /movie/:id (Movie): Nesta rota, mostro detalhes específicos de um filme selecionado, como o orçamento, a receita, a duração e uma descrição geral.
+
+# /search (Search): Permite que os usuários façam buscas por filmes usando palavras-chave.
+
+# Componentes e Funcionalidades
 O componente App serve como o layout principal, incluindo o Navbar para a navegação e um Outlet que renderiza os componentes das rotas ativas. Em Home, uso a API para obter e exibir filmes altamente avaliados. Em Movie, detalho mais informações sobre um filme escolhido, utilizando ícones para uma melhor visualização das informações.
 
 No componente Search, implementei uma funcionalidade de busca dinâmica, onde os resultados da pesquisa são exibidos em tempo real à medida que o usuário digita sua consulta. Isso foi alcançado usando useState e useEffect para gerenciar o estado e os efeitos colaterais da busca, respectivamente.
